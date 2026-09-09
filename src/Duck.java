@@ -6,5 +6,7 @@ public abstract class Duck {
         IO.println("Duck is swimming...");
     }
     public abstract void display();
-
+    public void fly() {
+        IO.println("Duck is flying!");
+    }
 }
