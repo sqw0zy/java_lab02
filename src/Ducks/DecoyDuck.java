@@ -5,12 +5,13 @@ import QuackBehavior.MuteQuack;
 
 public class DecoyDuck extends Duck {
 
-    public void DecoyDuck() {
+    public DecoyDuck() {
         flyBehavior = new FlyNoWay();
         quackBehavior = new MuteQuack();
     }
 
+
     public void display() {
-        IO.println("Ducks.DecoyDuck display");
+        IO.println("DecoyDuck display");
     }
 }

@@ -1,11 +1,20 @@
 package Ducks;
 
-import FlyBehavior.FlyBehavior;
-import QuackBehavior.QuackBehavior;
+import FlyBehavior.*;
+import QuackBehavior.*;
 
 public abstract class Duck {
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
+
+    public Duck() {
+        this(new FlyWithWings(), new Quack());
+    }
+
+    public Duck(FlyBehavior fb, QuackBehavior qb) {
+        flyBehavior = fb;
+        quackBehavior = qb;
+    }
 
     public void setFlyBehavior(FlyBehavior fb) {
         flyBehavior = fb;
@@ -21,7 +30,7 @@ public abstract class Duck {
         flyBehavior.fly();
     }
     public void swim() {
-        IO.println("Ducks.Duck is swimming...");
+        IO.println("Duck is swimming");
     }
     public abstract void display();
 }

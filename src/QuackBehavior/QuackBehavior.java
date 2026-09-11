@@ -1,5 +1,7 @@
 package QuackBehavior;
 
 public interface QuackBehavior {
-    void quack();
+    default void quack() {
+        IO.println("quack in interface");
+    };
 }

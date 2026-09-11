@@ -11,7 +11,7 @@ public class MallardDuck extends Duck {
     }
 
     public void display() {
-        IO.println("Ducks.MallardDuck display");
+        IO.println("MallardDuck display");
     }
 
 

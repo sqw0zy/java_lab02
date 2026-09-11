@@ -11,6 +11,6 @@ public class RubberDuck extends Duck {
     }
 
     public void display() {
-        IO.println("Ducks.RubberDuck display");
+        IO.println("RubberDuck display");
     }
 }
