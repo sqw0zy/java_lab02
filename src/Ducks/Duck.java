@@ -21,7 +21,7 @@ public abstract class Duck {
         flyBehavior.fly();
     }
     public void swim() {
-        IO.println("Ducks.Duck is swimming...");
+        IO.println("Duck is swimming...");
     }
     public abstract void display();
 }

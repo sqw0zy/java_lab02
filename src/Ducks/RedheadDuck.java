@@ -11,7 +11,7 @@ public class RedheadDuck extends Duck {
     }
 
     public void display() {
-        IO.println("Ducks.RedheadDuck dispay");
+        IO.println("RedheadDuck dispay");
     }
 
 }
